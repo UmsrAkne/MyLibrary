@@ -22,6 +22,7 @@ namespace MyLibraryTests.Models
             Assert.That(c.Convert(input, typeof(string), null, null), Is.EqualTo(result));
         }
 
+        [Test]
         public void ConvertTest_0の時の非表示のテスト()
         {
             var c = new NumberFormatConverter
