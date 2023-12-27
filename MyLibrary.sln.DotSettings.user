@@ -5,5 +5,7 @@
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=304870ed_002D75fb_002D48d8_002D877e_002D18f40e99aed2/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="ConvertTest" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;NUnit3x::54703779-1E1D-4916-B2BB-18DECF4DF02E::net5.0::MyLibraryTests.Models.NumberFormatConverterTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::54703779-1E1D-4916-B2BB-18DECF4DF02E::net5.0::MyLibraryTests.Models.BoolNegativeConverterTest.ConvertTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::54703779-1E1D-4916-B2BB-18DECF4DF02E::net5.0::MyLibraryTests.Models.BoolNegativeConverterTest.ConvertTest_2&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
