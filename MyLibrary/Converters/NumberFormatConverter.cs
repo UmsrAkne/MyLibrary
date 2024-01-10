@@ -10,7 +10,7 @@ namespace MyLibrary.Converters
         {
             if (value != null)
             {
-                return (int)value == 0 && VisibleWhenZero
+                return (int)value == 0 && !VisibleWhenZero
                     ? string.Empty
                     : ((int)value).ToString(Format);
             }

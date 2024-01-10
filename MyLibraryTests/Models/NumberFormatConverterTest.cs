@@ -27,10 +27,23 @@ namespace MyLibraryTests.Models
         {
             var c = new NumberFormatConverter
             {
-                VisibleWhenZero = true,
+                VisibleWhenZero = false, // 0の時、値を表示しない
+                Format = "D3",
             };
 
             Assert.That(c.Convert(0, typeof(string), null, null), Is.EqualTo(string.Empty));
+        }
+
+        [Test]
+        public void ConvertTest_0の時に表示のテスト()
+        {
+            var c = new NumberFormatConverter
+            {
+                VisibleWhenZero = true, // 0の時、値を表示する
+                Format = "D3",
+            };
+
+            Assert.That(c.Convert(0, typeof(string), null, null), Is.EqualTo("000"));
         }
     }
 }
