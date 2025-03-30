@@ -46,7 +46,7 @@ namespace MyLibrary.Utils
 
         private string Version { get => version; set => SetProperty(ref version, value); }
 
-        public void UpdateTile()
+        public void UpdateTitle()
         {
             Version = $"{MajorVersion}.{MinorVersion}.{PatchVersion} ({Updated}{SuffixId})";
         }
@@ -54,7 +54,7 @@ namespace MyLibrary.Utils
         [Conditional("RELEASE")]
         private void SetVersion()
         {
-            UpdateTile();
+            UpdateTitle();
         }
 
         [Conditional("DEBUG")]
