@@ -18,7 +18,7 @@ namespace MyLibraryTests.Utils
                 SuffixId = "b",
             };
 
-            appVersionInfo.UpdateTile();
+            appVersionInfo.UpdateTitle();
             Assert.That(appVersionInfo.Title, Is.EqualTo("My Library   version : 1.2.3 (20250321b)"));
         }
     }
