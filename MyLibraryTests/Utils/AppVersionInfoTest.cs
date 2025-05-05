@@ -9,8 +9,8 @@ namespace MyLibraryTests.Utils
         [Test]
         public void TitleTest()
         {
-            var appVersionInfo = new AppVersionInfo();
-            Assert.That(appVersionInfo.Title, Is.EqualTo("My Library ver:1.0.0"));
+            var appVersionInfo = new AppVersionInfo() { CustomVersion = "1.2.3", };
+            Assert.That(appVersionInfo.Title, Is.EqualTo("My Library ver:1.2.3"));
         }
     }
 }
