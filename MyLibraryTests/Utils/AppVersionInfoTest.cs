@@ -9,17 +9,8 @@ namespace MyLibraryTests.Utils
         [Test]
         public void TitleTest()
         {
-            var appVersionInfo = new AppVersionInfo()
-            {
-                MajorVersion = 1,
-                MinorVersion = 2,
-                PatchVersion = 3,
-                Updated = "20250321",
-                SuffixId = "b",
-            };
-
-            appVersionInfo.UpdateTitle();
-            Assert.That(appVersionInfo.Title, Is.EqualTo("My Library   version : 1.2.3 (20250321b)"));
+            var appVersionInfo = new AppVersionInfo() { CustomVersion = "1.2.3", };
+            Assert.That(appVersionInfo.Title, Is.EqualTo("My Library ver:1.2.3"));
         }
     }
 }
